@@ -8,10 +8,10 @@ function grandpa(){
 
         function son(){
             var playnintendo = "Mario";
-        }   
+        }
     }
 
-    function uncle(){        
+    function uncle(){
         var badjoke = "Har";
 
         function cousin(){
@@ -24,19 +24,19 @@ function grandpa(){
 Remove entries from the array until only correct answers remain
 
 These function(s) access the playball variable and get homerun
-var scopeArray1 = ["grandpa", "dad", "son", "uncle", "cousin"];
+var scopeArray1 = ["grandpa", "son", "uncle", "cousin"];
 
 These function(s) access the playball variable and get touchdown
-var scopeArray2 = ["grandpa", "dad", "son", "uncle", "cousin"];
+var scopeArray2 = ["dad", "son"];
 
 These function(s) access the badjoke variable and get undefined
-var scopeArray3 = ["grandpa", "dad", "son", "uncle", "cousin"];
+var scopeArray3 = ["grandpa", "dad", "son"];
 
 These functions accesss the badjoke variable and get "Har"
-var scopeArray4 = ["grandpa", "dad", "son", "uncle", "cousin"];
+var scopeArray4 = ["uncle", "cousin"];
 
 These functions access the playnintendo variable and get Mario
-var scopeArray5 = ["grandpa", "dad", "son", "uncle", "cousin"];
+var scopeArray5 = ["son"];
 
 
 `var foo;`
@@ -46,6 +46,13 @@ Promises
   Call setTimeout on a function
   which changes the variable foo (above) to 'bar'
   Resolve the promise when setTimeout completes.
+
+`
+function async () {
+  return $q(var hello)
+}
+
+
 
 Context
 # Context 1
@@ -71,7 +78,7 @@ Make a constructor function called taco that takes in 3 parameters: shell, meat,
 Make a constructor function called burrito.  It has a property called percentLeft = 100.  It has a property called eat that is a function.  When eat is invoked it uses context to implicitly subract 25 from the percentLeft on the burrito.
 
 
-# Prototype 1 
+# Prototype 1
 Add prototype function to the array type that doubles the value of every item in the array
 
 # Prototype 2
@@ -80,13 +87,13 @@ Write a constructor function called chimichanga.  It has a property called perce
 
 # Closure 1
 Write a function called sentence machine.  It takes in a parameter called partOne.  It returns a function called sentenceSmasher.
-When sentenceSmasher is invoked it should take in a parameter called partTwo and return a new string that adds partOne and partTwo together.  
+When sentenceSmasher is invoked it should take in a parameter called partTwo and return a new string that adds partOne and partTwo together.
 
 # Closure 2
-Write a function called subway.  It takes in one parameter called personName.  
+Write a function called subway.  It takes in one parameter called personName.
 It needs to keep track of what ingredients the person wants on their sandwhich.
-It needs to do this by returning a function called addIngredient.  
-When addIngredient is invoked it saves that ingredient with previously added ingredients and then returns an object that looks like this (Replace the parts wrapped in <> with correct data): 
+It needs to do this by returning a function called addIngredient.
+When addIngredient is invoked it saves that ingredient with previously added ingredients and then returns an object that looks like this (Replace the parts wrapped in <> with correct data):
 ```
 {
     orderPerson: <Person name goes here>,
@@ -98,4 +105,4 @@ When addIngredient is invoked it saves that ingredient with previously added ing
 Write a function that takes in 2 parameters.
 If both parameters are the same type an the same value return "Exact match".
 If both parameters have the same value but are different types return "Different types"
-Otherwise return "Different values" 
+Otherwise return "Different values"
