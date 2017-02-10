@@ -50,7 +50,7 @@ var foo;
   which changes the variable foo (above) to 'bar'
   And resolve the promise when setTimeout completes.
 */
-
+console.log($q)
 
 function async (data) {
   var promise
